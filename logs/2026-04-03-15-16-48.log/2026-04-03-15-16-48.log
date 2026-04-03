@@ -1,0 +1,65 @@
+[2026-04-03 15:16:52,101] 15 root - INFO - >>>>>>>>>>>>>Data Ingestion Started<<<<<<<<<<<<<<
+[2026-04-03 15:16:55,865] 37 root - INFO - Completed Exporting Collection as DataFrame
+[2026-04-03 15:16:55,936] 50 root - INFO - Completed Exporting Data into Feature Store
+[2026-04-03 15:16:55,941] 61 root - INFO - Completed Splitting Data into Train and Test Set
+[2026-04-03 15:16:55,941] 62 root - INFO - Train Set Shape: (8844, 32)
+[2026-04-03 15:16:55,941] 63 root - INFO - Test Set Shape: (2211, 32)
+[2026-04-03 15:16:55,941] 67 root - INFO - Completed Creating Train and Test Directory
+[2026-04-03 15:16:56,009] 70 root - INFO - Completed Exporting Train and Test Set
+[2026-04-03 15:16:56,010] 20 root - INFO - >>>>>>>>>>>>>Data Ingestion Completed<<<<<<<<<<<<<<
+[2026-04-03 15:16:56,010] 21 root - INFO - Train File Path: Artifacts/2026-04-03-15-16-49/data_ingestion/ingested/train.csv
+[2026-04-03 15:16:56,010] 22 root - INFO - Test File Path: Artifacts/2026-04-03-15-16-49/data_ingestion/ingested/test.csv
+[2026-04-03 15:16:56,010] 25 root - INFO - >>>>>>>>>>>>>Data Validation Started<<<<<<<<<<<<<<
+[2026-04-03 15:16:56,038] 35 root - INFO - Number of columns in the schema: 2
+[2026-04-03 15:16:56,038] 36 root - INFO - Number of columns in the dataframe: 32
+[2026-04-03 15:16:56,038] 41 root - ERROR - Schema and dataframe have different number of columns
+[2026-04-03 15:16:56,039] 35 root - INFO - Number of columns in the schema: 2
+[2026-04-03 15:16:56,039] 36 root - INFO - Number of columns in the dataframe: 32
+[2026-04-03 15:16:56,039] 41 root - ERROR - Schema and dataframe have different number of columns
+[2026-04-03 15:16:56,146] 80 root - INFO - Data validation report: {'_id': {'p_value': 0.4527621454370569, 'drift_status': False}, 'having_IP_Address': {'p_value': 1.0, 'drift_status': False}, 'URL_Length': {'p_value': 0.9999999999598222, 'drift_status': False}, 'Shortining_Service': {'p_value': 1.0, 'drift_status': False}, 'having_At_Symbol': {'p_value': 0.9999971010402764, 'drift_status': False}, 'double_slash_redirecting': {'p_value': 1.0, 'drift_status': False}, 'Prefix_Suffix': {'p_value': 0.9999998099738984, 'drift_status': False}, 'having_Sub_Domain': {'p_value': 0.4527621454370569, 'drift_status': False}, 'SSLfinal_State': {'p_value': 0.6289523183481528, 'drift_status': False}, 'Domain_registeration_length': {'p_value': 0.9970105474352128, 'drift_status': False}, 'Favicon': {'p_value': 1.0, 'drift_status': False}, 'port': {'p_value': 1.0, 'drift_status': False}, 'HTTPS_token': {'p_value': 0.9999999999997877, 'drift_status': False}, 'Request_URL': {'p_value': 1.0, 'drift_status': False}, 'URL_of_Anchor': {'p_value': 0.9876237011526984, 'drift_status': False}, 'Links_in_tags': {'p_value': 0.9999760319468036, 'drift_status': False}, 'SFH': {'p_value': 0.9999836499887566, 'drift_status': False}, 'Submitting_to_email': {'p_value': 1.0, 'drift_status': False}, 'Abnormal_URL': {'p_value': 1.0, 'drift_status': False}, 'Redirect': {'p_value': 1.0, 'drift_status': False}, 'on_mouseover': {'p_value': 1.0, 'drift_status': False}, 'RightClick': {'p_value': 1.0, 'drift_status': False}, 'popUpWidnow': {'p_value': 1.0, 'drift_status': False}, 'Iframe': {'p_value': 1.0, 'drift_status': False}, 'age_of_domain': {'p_value': 1.0, 'drift_status': False}, 'DNSRecord': {'p_value': 0.9528546927737338, 'drift_status': False}, 'web_traffic': {'p_value': 0.8427303427983684, 'drift_status': False}, 'Page_Rank': {'p_value': 1.0, 'drift_status': False}, 'Google_Index': {'p_value': 0.9786058095826133, 'drift_status': False}, 'Links_pointing_to_page': {'p_value': 1.0, 'drift_status': False}, 'Statistical_report': {'p_value': 1.0, 'drift_status': False}, 'Result': {'p_value': 0.9687622789382879, 'drift_status': False}}
+[2026-04-03 15:16:56,214] 29 root - INFO - >>>>>>>>>>>>>Data Validation Completed<<<<<<<<<<<<<<
+[2026-04-03 15:16:56,214] 32 root - INFO - >>>>>>>>>>>>>Data Transformation Started<<<<<<<<<<<<<<
+[2026-04-03 15:16:56,214] 48 root - INFO - Initiating data Reading
+[2026-04-03 15:16:56,233] 51 root - INFO - Data read successfully
+[2026-04-03 15:16:56,233] 52 root - INFO - Imputing missing values in train data
+[2026-04-03 15:16:56,236] 58 root - INFO - Imputing missing values in test data
+[2026-04-03 15:16:56,236] 63 root - INFO - Imputation complete
+[2026-04-03 15:16:56,236] 65 root - INFO - Initiating data transformation pipeline
+[2026-04-03 15:16:56,236] 34 root - INFO - Initiating KNNImputer with parameters{'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2026-04-03 15:16:56,236] 38 root - INFO - KNNImputer initiated successfully
+[2026-04-03 15:16:56,238] 68 root - INFO - Data transformation pipeline initiated successfully
+[2026-04-03 15:16:56,240] 73 root - INFO - Converting transformed data to numpy array
+[2026-04-03 15:16:56,240] 76 root - INFO - Train array shape: (8844, 31)
+[2026-04-03 15:16:56,241] 77 root - INFO - Test array shape: (2211, 31)
+[2026-04-03 15:16:56,241] 78 root - INFO - Data converted to numpy array
+[2026-04-03 15:16:56,241] 29 root - INFO - Saving numpy array to file: Artifacts/2026-04-03-15-16-49/data_transformation/transformed/trainnpy
+[2026-04-03 15:16:56,242] 34 root - INFO - Complete saving numpy array to file: Artifacts/2026-04-03-15-16-49/data_transformation/transformed/trainnpy
+[2026-04-03 15:16:56,242] 29 root - INFO - Saving numpy array to file: Artifacts/2026-04-03-15-16-49/data_transformation/transformed/testnpy
+[2026-04-03 15:16:56,242] 34 root - INFO - Complete saving numpy array to file: Artifacts/2026-04-03-15-16-49/data_transformation/transformed/testnpy
+[2026-04-03 15:16:56,242] 40 root - INFO - Saving object to file: Artifacts/2026-04-03-15-16-49/data_transformation/transformed_object/preprocessor.pkl
+[2026-04-03 15:16:56,245] 44 root - INFO - Complete saving object to file: Artifacts/2026-04-03-15-16-49/data_transformation/transformed_object/preprocessor.pkl
+[2026-04-03 15:16:56,245] 40 root - INFO - Saving object to file: final_models/preprocessor.pkl
+[2026-04-03 15:16:56,246] 44 root - INFO - Complete saving object to file: final_models/preprocessor.pkl
+[2026-04-03 15:16:56,246] 86 root - INFO - Data transformation completed
+[2026-04-03 15:16:56,246] 36 root - INFO - >>>>>>>>>>>>>Data Transformation Completed<<<<<<<<<<<<<<
+[2026-04-03 15:16:56,246] 39 root - INFO - >>>>>>>>>>>>>Model Trainer Started<<<<<<<<<<<<<<
+[2026-04-03 15:16:56,247] 159 root - INFO - Initiating Model Trainer
+[2026-04-03 15:16:56,247] 161 root - INFO - Train File Path: Artifacts/2026-04-03-15-16-49/data_transformation/transformed/trainnpy
+[2026-04-03 15:16:56,247] 163 root - INFO - Test File Path: Artifacts/2026-04-03-15-16-49/data_transformation/transformed/testnpy
+[2026-04-03 15:16:56,247] 45 root - INFO - Choosing Model and Training the Model
+[2026-04-03 15:16:56,248] 56 root - INFO - Hyperparameter Tuning
+[2026-04-03 15:18:32,150] 107 root - INFO - Hyperparameter Tuning Completed
+[2026-04-03 15:18:32,151] 108 root - INFO - Model Report: {'Logistic Regression': 0.6961566394706947, 'Random Forest': 0.8968774049112661, 'Ada Boost': 0.6998395892952923, 'Bagging': 0.8839870805251744, 'Decision Tree': 0.8489990571914967, 'Support Vector Machine': 0.7569253115765557, 'Extra Tree': 0.8379502077177039}
+[2026-04-03 15:18:32,151] 111 root - INFO - Best Model Score: 0.8968774049112661
+[2026-04-03 15:18:32,151] 116 root - INFO - Best Model Name: Random Forest
+[2026-04-03 15:18:32,225] 121 root - INFO - Classification Train Metric: ClassificationMetricArtifact(accuracy_score=0.9899366802351877, precision_score=0.988834754364596, recall_score=0.9930682976554536, f1_score=0.9909470043739192)
+[2026-04-03 15:18:32,271] 125 root - INFO - Classification Test Metric: ClassificationMetricArtifact(accuracy_score=0.9746720940750792, precision_score=0.9723538704581358, recall_score=0.9832268370607029, f1_score=0.977760127084988)
+[2026-04-03 15:18:32,272] 52 root - INFO - Loading object from file: Artifacts/2026-04-03-15-16-49/data_transformation/transformed_object/preprocessor.pkl
+[2026-04-03 15:18:32,274] 138 root - INFO - Saving the Trained Model: Artifacts/2026-04-03-15-16-49/model_trainer/trained_model/model.pkl
+[2026-04-03 15:18:32,274] 40 root - INFO - Saving object to file: final_models/model.pkl
+[2026-04-03 15:18:32,292] 44 root - INFO - Complete saving object to file: final_models/model.pkl
+[2026-04-03 15:18:32,292] 142 root - INFO - Network Model: <networksecurity.utils.ml_utils.model.estimator.NetworkModel object at 0x12bac1700>
+[2026-04-03 15:18:32,292] 40 root - INFO - Saving object to file: Artifacts/2026-04-03-15-16-49/model_trainer/trained_model/model.pkl
+[2026-04-03 15:18:32,316] 44 root - INFO - Complete saving object to file: Artifacts/2026-04-03-15-16-49/model_trainer/trained_model/model.pkl
+[2026-04-03 15:18:32,317] 150 root - INFO - Model Trainer Artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts/2026-04-03-15-16-49/model_trainer/trained_model/model.pkl', train_metric_artifact=ClassificationMetricArtifact(accuracy_score=0.9899366802351877, precision_score=0.988834754364596, recall_score=0.9930682976554536, f1_score=0.9909470043739192), test_metric_artifact=ClassificationMetricArtifact(accuracy_score=0.9746720940750792, precision_score=0.9723538704581358, recall_score=0.9832268370607029, f1_score=0.977760127084988))
+[2026-04-03 15:18:32,317] 43 root - INFO - >>>>>>>>>>>>>Model Trainer Completed<<<<<<<<<<<<<<

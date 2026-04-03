@@ -1,0 +1,66 @@
+[2026-04-03 15:08:43,080] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-04-03 15:08:43,089] 107 dagshub - INFO - Accessing as adarshsingh20048269
+[2026-04-03 15:08:43,956] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/ArpitKadam/Network_Security "HTTP/1.1 200 OK"
+[2026-04-03 15:08:44,761] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-04-03 15:08:44,764] 107 dagshub - INFO - Initialized MLflow to track repo "ArpitKadam/Network_Security"
+[2026-04-03 15:08:44,765] 107 dagshub - INFO - Repository ArpitKadam/Network_Security initialized!
+[2026-04-03 15:08:44,765] 15 root - INFO - >>>>>>>>>>>>>Data Ingestion Started<<<<<<<<<<<<<<
+[2026-04-03 15:08:48,524] 37 root - INFO - Completed Exporting Collection as DataFrame
+[2026-04-03 15:08:48,597] 50 root - INFO - Completed Exporting Data into Feature Store
+[2026-04-03 15:08:48,603] 61 root - INFO - Completed Splitting Data into Train and Test Set
+[2026-04-03 15:08:48,603] 62 root - INFO - Train Set Shape: (8844, 32)
+[2026-04-03 15:08:48,603] 63 root - INFO - Test Set Shape: (2211, 32)
+[2026-04-03 15:08:48,604] 67 root - INFO - Completed Creating Train and Test Directory
+[2026-04-03 15:08:48,679] 70 root - INFO - Completed Exporting Train and Test Set
+[2026-04-03 15:08:48,681] 20 root - INFO - >>>>>>>>>>>>>Data Ingestion Completed<<<<<<<<<<<<<<
+[2026-04-03 15:08:48,681] 21 root - INFO - Train File Path: Artifacts/2026-04-03-15-08-39/data_ingestion/ingested/train.csv
+[2026-04-03 15:08:48,681] 22 root - INFO - Test File Path: Artifacts/2026-04-03-15-08-39/data_ingestion/ingested/test.csv
+[2026-04-03 15:08:48,681] 25 root - INFO - >>>>>>>>>>>>>Data Validation Started<<<<<<<<<<<<<<
+[2026-04-03 15:08:48,712] 35 root - INFO - Number of columns in the schema: 2
+[2026-04-03 15:08:48,712] 36 root - INFO - Number of columns in the dataframe: 32
+[2026-04-03 15:08:48,713] 41 root - ERROR - Schema and dataframe have different number of columns
+[2026-04-03 15:08:48,713] 35 root - INFO - Number of columns in the schema: 2
+[2026-04-03 15:08:48,713] 36 root - INFO - Number of columns in the dataframe: 32
+[2026-04-03 15:08:48,713] 41 root - ERROR - Schema and dataframe have different number of columns
+[2026-04-03 15:08:48,845] 80 root - INFO - Data validation report: {'_id': {'p_value': 0.903368877960458, 'drift_status': False}, 'having_IP_Address': {'p_value': 1.0, 'drift_status': False}, 'URL_Length': {'p_value': 0.8685540728180071, 'drift_status': False}, 'Shortining_Service': {'p_value': 0.9999999999999952, 'drift_status': False}, 'having_At_Symbol': {'p_value': 0.8979221700912247, 'drift_status': False}, 'double_slash_redirecting': {'p_value': 0.9999999977781104, 'drift_status': False}, 'Prefix_Suffix': {'p_value': 0.9999971010402764, 'drift_status': False}, 'having_Sub_Domain': {'p_value': 0.9995152509457711, 'drift_status': False}, 'SSLfinal_State': {'p_value': 0.9999996521355587, 'drift_status': False}, 'Domain_registeration_length': {'p_value': 0.903368877960458, 'drift_status': False}, 'Favicon': {'p_value': 1.0, 'drift_status': False}, 'port': {'p_value': 1.0, 'drift_status': False}, 'HTTPS_token': {'p_value': 1.0, 'drift_status': False}, 'Request_URL': {'p_value': 0.9236254567999284, 'drift_status': False}, 'URL_of_Anchor': {'p_value': 0.7168453975391859, 'drift_status': False}, 'Links_in_tags': {'p_value': 0.7634837477364733, 'drift_status': False}, 'SFH': {'p_value': 0.9453319119697715, 'drift_status': False}, 'Submitting_to_email': {'p_value': 1.0, 'drift_status': False}, 'Abnormal_URL': {'p_value': 0.9999062353866229, 'drift_status': False}, 'Redirect': {'p_value': 0.9958579353974752, 'drift_status': False}, 'on_mouseover': {'p_value': 1.0, 'drift_status': False}, 'RightClick': {'p_value': 1.0, 'drift_status': False}, 'popUpWidnow': {'p_value': 0.9999999750532348, 'drift_status': False}, 'Iframe': {'p_value': 1.0, 'drift_status': False}, 'age_of_domain': {'p_value': 1.0, 'drift_status': False}, 'DNSRecord': {'p_value': 0.5421037469854307, 'drift_status': False}, 'web_traffic': {'p_value': 0.6449841622347342, 'drift_status': False}, 'Page_Rank': {'p_value': 0.9998299425911609, 'drift_status': False}, 'Google_Index': {'p_value': 1.0, 'drift_status': False}, 'Links_pointing_to_page': {'p_value': 0.9999953843756324, 'drift_status': False}, 'Statistical_report': {'p_value': 0.9995152509457711, 'drift_status': False}, 'Result': {'p_value': 0.40441172880036186, 'drift_status': False}}
+[2026-04-03 15:08:48,914] 29 root - INFO - >>>>>>>>>>>>>Data Validation Completed<<<<<<<<<<<<<<
+[2026-04-03 15:08:48,914] 32 root - INFO - >>>>>>>>>>>>>Data Transformation Started<<<<<<<<<<<<<<
+[2026-04-03 15:08:48,914] 48 root - INFO - Initiating data Reading
+[2026-04-03 15:08:48,938] 51 root - INFO - Data read successfully
+[2026-04-03 15:08:48,938] 52 root - INFO - Imputing missing values in train data
+[2026-04-03 15:08:48,941] 58 root - INFO - Imputing missing values in test data
+[2026-04-03 15:08:48,942] 63 root - INFO - Imputation complete
+[2026-04-03 15:08:48,942] 65 root - INFO - Initiating data transformation pipeline
+[2026-04-03 15:08:48,942] 34 root - INFO - Initiating KNNImputer with parameters{'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2026-04-03 15:08:48,942] 38 root - INFO - KNNImputer initiated successfully
+[2026-04-03 15:08:48,945] 68 root - INFO - Data transformation pipeline initiated successfully
+[2026-04-03 15:08:48,949] 73 root - INFO - Converting transformed data to numpy array
+[2026-04-03 15:08:48,949] 76 root - INFO - Train array shape: (8844, 31)
+[2026-04-03 15:08:48,950] 77 root - INFO - Test array shape: (2211, 31)
+[2026-04-03 15:08:48,950] 78 root - INFO - Data converted to numpy array
+[2026-04-03 15:08:48,950] 29 root - INFO - Saving numpy array to file: Artifacts/2026-04-03-15-08-39/data_transformation/transformed/trainnpy
+[2026-04-03 15:08:48,951] 34 root - INFO - Complete saving numpy array to file: Artifacts/2026-04-03-15-08-39/data_transformation/transformed/trainnpy
+[2026-04-03 15:08:48,951] 29 root - INFO - Saving numpy array to file: Artifacts/2026-04-03-15-08-39/data_transformation/transformed/testnpy
+[2026-04-03 15:08:48,951] 34 root - INFO - Complete saving numpy array to file: Artifacts/2026-04-03-15-08-39/data_transformation/transformed/testnpy
+[2026-04-03 15:08:48,951] 40 root - INFO - Saving object to file: Artifacts/2026-04-03-15-08-39/data_transformation/transformed_object/preprocessor.pkl
+[2026-04-03 15:08:48,954] 44 root - INFO - Complete saving object to file: Artifacts/2026-04-03-15-08-39/data_transformation/transformed_object/preprocessor.pkl
+[2026-04-03 15:08:48,954] 40 root - INFO - Saving object to file: final_models/preprocessor.pkl
+[2026-04-03 15:08:48,956] 44 root - INFO - Complete saving object to file: final_models/preprocessor.pkl
+[2026-04-03 15:08:48,956] 86 root - INFO - Data transformation completed
+[2026-04-03 15:08:48,956] 36 root - INFO - >>>>>>>>>>>>>Data Transformation Completed<<<<<<<<<<<<<<
+[2026-04-03 15:08:48,956] 39 root - INFO - >>>>>>>>>>>>>Model Trainer Started<<<<<<<<<<<<<<
+[2026-04-03 15:08:48,956] 165 root - INFO - Initiating Model Trainer
+[2026-04-03 15:08:48,956] 167 root - INFO - Train File Path: Artifacts/2026-04-03-15-08-39/data_transformation/transformed/trainnpy
+[2026-04-03 15:08:48,956] 169 root - INFO - Test File Path: Artifacts/2026-04-03-15-08-39/data_transformation/transformed/testnpy
+[2026-04-03 15:08:48,958] 51 root - INFO - Choosing Model and Training the Model
+[2026-04-03 15:08:48,958] 63 root - INFO - Hyperparameter Tuning
+[2026-04-03 15:10:27,736] 110 root - INFO - Hyperparameter Tuning Completed
+[2026-04-03 15:10:27,737] 111 root - INFO - Model Report: {'Logistic Regression': 0.7032087675348226, 'Random Forest': 0.867081227178172, 'Ada Boost': 0.7195960134991576, 'Bagging': 0.8597980067495787, 'Decision Tree': 0.8197402943923155, 'Support Vector Machine': 0.7541913105349758, 'Extra Tree': 0.8579772016424305}
+[2026-04-03 15:10:27,737] 113 root - INFO - Best Model Score: 0.867081227178172
+[2026-04-03 15:10:27,737] 117 root - INFO - Best Model Name: Random Forest
+[2026-04-03 15:10:27,807] 123 root - INFO - Classification Train Metric: ClassificationMetricArtifact(accuracy_score=0.9908412483039348, precision_score=0.9895707982350581, recall_score=0.994156760024179, f1_score=0.991858478239019)
+[2026-04-03 15:10:27,851] 127 root - INFO - Classification Test Metric: ClassificationMetricArtifact(accuracy_score=0.9669832654907282, precision_score=0.9666944213155704, recall_score=0.9723618090452262, f1_score=0.9695198329853862)
+[2026-04-03 15:10:27,851] 130 root - INFO - Tracking with MLFlow
+[2026-04-03 15:10:27,851] 132 root - INFO - Tracking Trained Model with MLFlow
+[2026-04-03 15:10:28,948] 160 root - ERROR - Error in train_model: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+[2026-04-03 15:10:28,949] 184 root - ERROR - Error in initiate_model_trainer: __init__() missing 1 required positional argument: 'error_details'

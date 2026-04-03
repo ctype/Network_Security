@@ -1,0 +1,6 @@
+[2026-04-03 14:49:32,234] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-04-03 14:49:32,238] 107 dagshub - INFO - Accessing as adarshsingh20048269
+[2026-04-03 14:49:33,037] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/ArpitKadam/Network_Security "HTTP/1.1 200 OK"
+[2026-04-03 14:49:33,914] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-04-03 14:49:33,917] 107 dagshub - INFO - Initialized MLflow to track repo "ArpitKadam/Network_Security"
+[2026-04-03 14:49:33,918] 107 dagshub - INFO - Repository ArpitKadam/Network_Security initialized!
